@@ -1,0 +1,47 @@
+.container-1 {
+    display: flex;
+    gap: 5px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-box-text {
+    color: darkblue;
+    font-weight: bold;
+}
+
+$base-color: rgb(12, 93, 32);
+
+.base-color {
+    background-color: rgba($base-color, .6);
+}
+.darken-1 {
+    background-color: rgba($base-color, .7);
+}
+.darken-2 {
+    background-color: rgba($base-color, .8);
+}
+.darken-3 {
+    background-color: rgba($base-color, .9);
+}
+.darken-4 {
+    background-color: rgba($base-color, 1);
+}
+.lighten-1 {
+    background-color: rgba($base-color, .5);
+}
+.lighten-2 {
+    background-color: rgba($base-color, .4);
+}
+.lighten-3 {
+    background-color: rgba($base-color, .3);
+}
+.lighten-4 {
+    background-color: rgba($base-color, .2);
+}
