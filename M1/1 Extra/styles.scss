@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.page-title{
+    font-size: 32px;
+    background-color: yellowgreen;
+    padding: 10px;
+    color: white;
+}
+
+.page-container{
+    display: flex;
+}
+
+// NAV
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: darkolivegreen;
+}
+.menu-container{
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.menu-title{
+    font-size: 24px;
+    padding: 1px 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu-container ul{
+    list-style: none;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+.menu-container li{
+    padding: 5px 0 5px 5px;
+    border: 1px solid #d7d7d7;
+}
+.menu-container li:hover{
+    background-color: olive;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+// MAIN
+body {
+    background-color: rgb(241, 241, 241);
+}
+main{
+    min-height: 88vh;
+}
+.list{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+    
+}
+.card{
+    border: 1px solid black;
+    border-radius: 2%;
+    width: 230px;
+    height: 170px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+// FOOTER
+
+footer{
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+}
+
+
+// Media Queries
+
+@media screen and (max-width: 768){
+    .toolbar, .menu-title{
+        display: none;
+    }
+    .page-container{
+        display: block;
+    }
+    nav{
+        position: sticky;
+        top: 0;
+    }
+    .menu-container ul{
+        background-color: olive;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-container li{
+        background-color: blanchedalmond;
+        padding: 5px 15px;
+        margin: 5px;
+    }
+    .menu-container li:hover{
+        background-color: rgb(113, 90, 56);
+    }
+    .card{
+        width: 100%;
+        border: 0;
+        margin: 0px 30px;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 20px;
+        gap: 15px;
+    }
+    .card img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+    .list{
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+}
